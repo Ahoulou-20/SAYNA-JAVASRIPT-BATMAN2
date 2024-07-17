@@ -1,0 +1,219 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:wght@400;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:wght@400;600;700&family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300..700&display=swap");
+/*Style généraux*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 16px;
+}
+
+body {
+  background-color: #000;
+  overflow: hidden;
+}
+
+._container {
+  width: 90%;
+  height: 100%;
+  border-left: 1px solid rgba(237, 222, 191, 0.4039215686);
+  border-right: 1px solid rgba(237, 222, 191, 0.4039215686);
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+*::selection {
+  background-color: #ffff00;
+  color: #000;
+}
+
+*::-webkit-scrollbar {
+  height: 0.2rem;
+  width: 0.3rem;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ffff00;
+  border-radius: 1rem;
+}
+
+h1 {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "Space-Grotesk", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  font-style: normal;
+}
+
+a {
+  font-family: "Space-Grotesk", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+}
+
+/*style en-tête*/
+header {
+  width: 100%;
+  height: 130vh;
+  background-image: url("../../assets/Illustrations/Batgame_1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header div._container {
+  margin: auto;
+}
+header div._container div.h_top {
+  width: 100%;
+  padding: 36px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(237, 222, 191, 0.4039215686);
+}
+header div._container div.h_top img:hover {
+  filter: brightness(0) saturate(100%) invert(79%) sepia(98%) saturate(579%) hue-rotate(1deg) brightness(91%) contrast(87%);
+}
+header div._container div.h_top ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+header div._container div.h_top ul li {
+  margin: 0 15px;
+}
+header div._container div.h_top ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+header div._container div.h_top ul li a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+header div._container div.h_top ul li a#game {
+  text-decoration: underline;
+  font-weight: bold;
+}
+header div._container div.h_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header div._container div.h_bottom h1 {
+  margin: 15% 60% 50% 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+header div._container div.h_bottom div.img_border {
+  position: fixed;
+  top: 35%;
+  right: 0.9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header div._container div.h_bottom div.img_border img {
+  margin: 8px 0;
+  width: 30px;
+}
+header div._container div.h_bottom div.img_border img:hover {
+  filter: brightness(0) saturate(100%) invert(79%) sepia(98%) saturate(579%) hue-rotate(1deg) brightness(91%) contrast(87%);
+}
+header div._container div.h_bottom div.img_border img#fleche_up {
+  width: auto;
+}
+header div._container div.h_bottom div.img_border img#fleche_down {
+  width: auto;
+}
+
+/* style menu */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main div._container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Style des sections de quiz */
+}
+main div._container div.game_acc {
+  width: 100%;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+main div._container div.game_acc img#fleche_down {
+  width: 100px;
+}
+main div._container div.game_acc h1 {
+  margin: 100px 0;
+}
+main div._container div.game_acc button {
+  margin: 100px 0;
+  width: 250px;
+  height: 56px;
+  background: linear-gradient(to right, rgba(25, 88, 125, 0.4392156863) 1%, rgba(237, 222, 191, 0.4039215686) 20%);
+}
+main div._container div.quiz_container {
+  margin: 40px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main div._container div.quiz_container section.quiz {
+  width: 95%;
+  text-align: left;
+}
+main div._container div.quiz_container section.quiz p {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+main div._container div.quiz_container section.quiz div.quiz_content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main div._container div.quiz_container section.quiz div.quiz_content div.quiz_left {
+  width: 30%;
+}
+main div._container div.quiz_container section.quiz div.quiz_content div.quiz_right {
+  width: 60%;
+}
+
+/*# sourceMappingURL=game.css.map */

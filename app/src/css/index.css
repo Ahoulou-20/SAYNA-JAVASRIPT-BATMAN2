@@ -1,0 +1,1227 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:wght@400;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:wght@400;600;700&family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300..700&display=swap");
+/* Configurations (mises en forme) générales */
+/* ajout particulier */
+*::selection {
+  background-color: rgb(177, 19, 19);
+  color: #ffffff;
+}
+
+*::-webkit-scrollbar {
+  height: 0.2rem;
+  width: 0.3rem;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(177, 19, 19);
+  border-radius: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.text {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 10px;
+  font-style: normal;
+}
+
+.sous-titre {
+  font-size: 20px;
+  font-family: 400;
+  color: #ffffff;
+  margin-top: 10px;
+  font-style: normal;
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+}
+
+button,
+input[type=submit] {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.container {
+  margin-left: 102px;
+  margin-right: 102px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  border: 0.1px solid #bcbbbd;
+  border-bottom: none;
+  border-top: none;
+}
+
+h1 {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  font-style: normal;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  font-style: normal;
+  color: #ffffff;
+}
+
+/* mise en forme de l'entête */
+header {
+  background: url("../../assets/Illustrations-home/Bathome1.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 130vh;
+  margin: 0;
+  padding: 0;
+}
+
+header .header-container {
+  top: 0;
+  height: 130vh;
+}
+
+/* Haut de l'entête */
+header .header-container .top {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 102px;
+  padding-top: 50px;
+  border-bottom: 1px solid #bcbbbd;
+}
+
+header .header-container .top a.logo-home {
+  color: none;
+}
+
+header .header-container .top a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+header .header-container .top a.home:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Surbrillance au survol des image de l'entête */
+header .header-container a img:hover {
+  filter: brightness(0) saturate(100%) invert(79%) sepia(98%) saturate(579%) hue-rotate(1deg) brightness(91%) contrast(87%);
+}
+
+/* Bas de l'entête */
+header .header-container .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 132px;
+}
+
+header .header-container .bottom .intro-h {
+  text-align: center;
+}
+
+/* structuration des paragraphes en intro */
+header .header-container .bottom p:nth-child(1) {
+  text-align: center;
+  width: 460px;
+  margin-top: 15px;
+}
+
+header .header-container .bottom p:nth-child(2) {
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+header .header-container .bottom .img-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  right: 3.9%;
+  top: 40%;
+}
+
+header .header-container .bottom .img-right img {
+  margin-bottom: 15px;
+}
+
+/* Boutons en Intro */
+header .header-container .bottom .btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+header .header-container .bottom .btn button {
+  width: 225px;
+  height: 55px;
+  margin: 15px;
+  padding: 8px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(177, 19, 19, 0.4));
+  transition: background 0.3s ease;
+  border: none;
+}
+
+/* Animation css des boutons */
+header .header-container .bottom .btn button:hover {
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(177, 19, 19));
+}
+
+/* Structuration du contenu principal */
+main {
+  background-color: #000000;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+main .container {
+  padding-left: 7%;
+}
+
+main .container .fleche-dwn {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+/* Section commune à cineme, némésis et alliés */
+main .container section {
+  padding-bottom: 80px;
+  padding-top: 40px;
+}
+
+main .container section > p {
+  width: 738px;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+main .container section .personnages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 92%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* Structuration du contenu principal -> structuration de chaque éléments images nom et année */
+/* Section commune à cineme, némésis et alliés */
+main .container section .personnages .pers-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Effet de zoom de 10% au survol des images */
+main .container section .personnages .pers-info:hover {
+  transform: scale(1.1);
+}
+
+main .container section .personnages .pers-info img {
+  width: 90%;
+  height: 377px;
+}
+
+/* Affichage de l'image au dessus du titre némésis */
+.bt-13 {
+  position: absolute;
+  width: 145px;
+  transform: translate(85%, -60%);
+  cursor: pointer;
+}
+
+/* Affichage de l'image au dessus du titre alliés */
+.bt-12 {
+  position: absolute;
+  right: 0;
+  transform: translateY(-75%);
+  height: 300px;
+  cursor: pointer;
+  width: 480px;
+}
+
+/* structuration de la section justice league */
+/* Structuration de l'image en dessous de la section justice league */
+main img:nth-child(2) {
+  left: 0;
+  width: 100%;
+}
+
+/* structuration de la section multimédia */
+main .container #multimedia {
+  width: 100%;
+}
+
+main .container #multimedia .top {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+
+main .container #multimedia .top .multi-info {
+  display: flex;
+  padding: 0;
+  height: 230px;
+  border-radius: 10px;
+  background-color: rgb(140, 135, 135);
+  background-image: linear-gradient(140deg, rgb(140, 135, 135) 10%, rgb(25, 88, 125) 57%);
+}
+
+main .container #multimedia .top .multi-info .image img {
+  height: 100%;
+}
+
+main .container #multimedia .top .multi-info .multi-info-text {
+  height: 99%;
+  padding: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+main .container #multimedia .top .multi-info .multi-info-text p {
+  width: 350px;
+  font-size: 12px;
+  padding: 0;
+}
+
+main .container #multimedia .top .multi-info p span {
+  color: #ffff00;
+}
+
+main .container #multimedia .top div .fleche-left,
+main .container #multimedia .top div .fleche-right {
+  margin-top: 100px;
+}
+
+/* Bas de page de la partie multimédia */
+main .container #multimedia .bottom .img-container {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+main .container #multimedia .bottom .img-container:hover .img1 {
+  box-shadow: 0px 0px 10px 10px rgba(188, 187, 189, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(188, 187, 189, 0.75);
+  -moz-box-shadow: 0px 0px 10px 10px rgba(188, 187, 189, 0.75);
+}
+
+main .container #multimedia .bottom .img-container:hover .img2 {
+  transform: scale(0.9);
+}
+
+main .container #multimedia .bottom .img1 {
+  width: 90%;
+  left: 0;
+  margin-top: 30px;
+}
+
+main .container #multimedia .bottom .img2 {
+  position: absolute;
+  width: 110px;
+  align-self: center;
+  left: 39.2%;
+  right: 55%;
+  top: 41.8%;
+}
+
+/* Structuration formulaire prenons contact */
+main #prenons-con {
+  width: 100%;
+  height: 120vh;
+  background-color: rgb(140, 135, 135);
+  background-image: linear-gradient(140deg, rgb(140, 135, 135) 10%, rgb(25, 88, 125) 57%);
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+}
+
+main #prenons-con form {
+  margin: auto;
+  width: 50vw;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+main #prenons-con form div.form-group {
+  border-bottom: 2px solid gray;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+main #prenons-con form div.form-group label.sous-titre {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+main #prenons-con form div.form-group input[type=text] {
+  width: 100%;
+  height: 20px;
+  padding: 0 2px;
+  margin: 0;
+  padding-bottom: 0;
+  background: none;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+
+main #prenons-con form div.form-group label.l-coche {
+  color: gray;
+}
+
+main #prenons-con form div.form-group label.l-coche > input[type=checkbox] {
+  height: 18px;
+  width: 18px;
+  transform: translateY(30%);
+  border: none;
+  outline: none;
+}
+
+main #prenons-con form div.form-group #freq {
+  width: 100%;
+  height: 30px;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid gray;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  color: gray;
+}
+
+main #prenons-con form div.form-group #freq optgroup {
+  width: 100%;
+  background-color: rgb(25, 88, 125);
+  color: #ffffff;
+  padding: 2rem;
+}
+
+main #prenons-con form div.form-group #freq optgroup option {
+  font-size: 20px;
+  padding: 1.5rem !important;
+}
+
+/* Flèche dans la case de select */
+main #prenons-con form div.form-group #freq {
+  /* Déclaration de la taille du bouton déroulant */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 30px;
+  background-image: url("../Assets/Logos/icon_flèche_3.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20px;
+  cursor: pointer;
+}
+
+main #prenons-con form div.form-btn {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+main #prenons-con form div.form-btn > button {
+  padding: 6px 4px;
+  margin: 10px;
+  background-color: rgb(140, 135, 135);
+  background-image: linear-gradient(140deg, rgb(140, 135, 135) 10%, rgb(25, 88, 125) 57%);
+  opacity: 0.7;
+}
+
+main #prenons-con form div.form-btn > button:hover {
+  opacity: 1;
+}
+
+main #prenons-con form div.form-btn > button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+main #prenons-con form .pop-up-btn > button {
+  width: 225px;
+  height: 55px;
+  margin: 15px;
+  padding: 8px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(177, 19, 19, 0.4));
+  transition: background 0.3s ease;
+  border: none;
+}
+
+/* Animation css des boutons */
+main #prenons-con form .pop-up-btn > button:hover {
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(177, 19, 19));
+}
+
+/* pop-up box */
+main #prenons-con form .pop-up {
+  position: relative;
+  transform: translateY(-200%);
+  width: 500px;
+  height: 40vh;
+  background-color: rgb(140, 135, 135);
+  background-image: linear-gradient(140deg, rgb(140, 135, 135) 10%, rgb(25, 88, 125) 57%);
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+main #prenons-con form .pop-up .pop-up-text {
+  position: absolute;
+  background-color: rgb(140, 135, 135);
+  background-image: linear-gradient(140deg, rgb(140, 135, 135) 10%, rgb(25, 88, 125) 57%);
+  box-shadow: 0px 0px 10px 10px rgba(188, 187, 189, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(188, 187, 189, 0.75);
+  -moz-box-shadow: 0px 0px 10px 10px rgba(188, 187, 189, 0.75);
+  width: 60%;
+  height: 60%;
+  text-align: center;
+  border: 1px solid #00b7e8;
+  border-radius: 10px;
+  top: 18%;
+  left: 20%;
+}
+
+main #prenons-con form .pop-up .pop-up-text p.text {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#pop-up {
+  display: none;
+}
+
+#pop-up:target {
+  display: block;
+}
+
+/* pied de page */
+footer {
+  background-color: #000000;
+  margin: 0;
+  bottom: 0;
+}
+
+footer .container {
+  padding-top: 90px;
+  height: 130vh;
+}
+
+footer .container .footer-top {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+footer .container .footer-top img {
+  width: 100px;
+  height: 100px;
+}
+
+footer .container .footer-top img:nth-child(3) {
+  margin-top: 280px;
+}
+
+footer .container .footer-top .p-container {
+  padding-top: 140px;
+  padding-bottom: 120px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+footer .container .footer-top .p-container p:nth-child(1),
+footer .container .footer-top .p-container p:nth-child(3) {
+  margin-bottom: 20px;
+}
+
+footer .container .footer-top .p-container p:nth-child(2),
+footer .container .footer-top .p-container p:nth-child(3),
+footer .container .footer-bottom p {
+  font-size: 12px;
+}
+
+/* structuration des input de type radio */
+input[type=radio] {
+  position: relative;
+  margin: 2px;
+}
+
+input[type=radio]::before,
+input[type=radio]::after {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+}
+
+input[type=radio]::before {
+  border: 1px solid #00b7e8;
+  background-color: #000000;
+}
+
+input[type=radio]:checked::after {
+  border: 1px solid #00b7e8;
+  background-color: #00b7e8;
+  transform: scale(0.9);
+}
+
+/* ------- */
+footer .container .footer-bottom {
+  margin-top: 100px;
+  margin: auto;
+  text-align: center;
+}
+
+footer .container .footer-bottom p > img {
+  transform: translateY(30%);
+  margin-right: 15px;
+}
+
+footer .container .footer-bottom .logo-group {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .container .footer-bottom .logo-group img {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Effets hover sur les boutons dans le pied de page */
+footer .container .footer-bottom .logo-group img:hover {
+  filter: brightness(0) saturate(100%) invert(79%) sepia(98%) saturate(579%) hue-rotate(1deg) brightness(91%) contrast(87%);
+}
+
+/* =============================================================== */
+/* Animation fade-in CSS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.fade-in {
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+/* ====================================================================================================== */
+/* Responsive disign */
+/* Ordinateurs de bureau et grands écrans */
+/* Pour les petits ordinateurs portables */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  form {
+    background-color: orange;
+  }
+  header {
+    height: 115vh;
+  }
+  .container {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  /* mise en forme de l'entête */
+  header .header-container {
+    height: 110vh;
+  }
+  /* Bas de l'entête */
+  header .header-container .bottom {
+    padding-top: 100px;
+  }
+  /* structuration des paragraphes en intro */
+  header .header-container .bottom .img-right {
+    right: 2.49%;
+  }
+  header .header-container .bottom .img-right img {
+    width: 40px;
+    height: 38px;
+  }
+  /* Boutons en Intro */
+  header .header-container .bottom .btn {
+    margin-top: 60px;
+  }
+  header .header-container .bottom .btn button {
+    width: 190px;
+    height: 50px;
+    padding: 6px;
+  }
+  /* Section commune à cineme, némésis et alliés */
+  main .container section {
+    padding-bottom: 60px;
+  }
+  main .container section > p {
+    width: 600px;
+  }
+  main .container section .personnages {
+    gap: 10px;
+  }
+  /* Structuration du contenu principal -> structuration de chaque éléments images nom et année */
+  /* Effet de zoom de 10% au survol des images */
+  main .container section .personnages .pers-info img {
+    height: 300px;
+  }
+  main .container section .personnages .pers-info .sous-titre {
+    font-size: 14px;
+  }
+  /* Affichage de l'image au dessus du titre némésis */
+  .bt-13 {
+    width: 120px;
+    transform: translate(85%, -60%);
+  }
+  /* Affichage de l'image au dessus du titre alliés */
+  .bt-12 {
+    transform: translateY(-60%);
+    height: 210px;
+    width: 250px;
+  }
+  main .mlti {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  main #multimedia .bottom .img-container {
+    margin-left: 50px;
+  }
+  /* Structuration formulaire prenons contact */
+  main #prenons-con form {
+    width: 75vw;
+  }
+  main #prenons-con form div.form-group {
+    border-bottom: 2px solid gray;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  main #prenons-con form div.form-group label.sous-titre {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  main #prenons-con form div.form-group input[type=text] {
+    width: 100%;
+    height: 20px;
+    padding: 0 2px;
+    margin: 0;
+    padding-bottom: 0;
+    background: none;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+  }
+  main #prenons-con form div.form-group label.l-coche {
+    color: gray;
+  }
+  main #prenons-con form div.form-group label.l-coche > input[type=checkbox] {
+    height: 18px;
+    width: 18px;
+    transform: translateY(30%);
+    border: none;
+    outline: none;
+  }
+  main #prenons-con form div.form-group #freq {
+    width: 100%;
+    height: 30px;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid gray;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    color: gray;
+  }
+  main #prenons-con form div.form-group #freq optgroup {
+    width: 100%;
+    background-color: rgb(25, 88, 125);
+    color: #ffffff;
+    padding: 2rem;
+  }
+  main #prenons-con form div.form-group #freq optgroup option {
+    font-size: 20px;
+    padding: 1.5rem !important;
+  }
+  /* Flèche dans la case de select */
+  main #prenons-con form div.form-group #freq {
+    /* Déclaration de la taille du bouton déroulant */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 30px;
+    background-image: url("../Assets/Logos/icon_flèche_3.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20px;
+    cursor: pointer;
+  }
+  main #prenons-con form div.form-btn {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  main #prenons-con form div.form-btn > button {
+    padding: 6px 4px;
+    margin: 10px;
+    background-color: rgb(140, 135, 135);
+    background-image: linear-gradient(140deg, rgb(140, 135, 135) 10%, rgb(25, 88, 125) 57%);
+    opacity: 0.7;
+  }
+  main #prenons-con form div.form-btn > button:hover {
+    opacity: 1;
+  }
+  main #prenons-con form div.form-btn > button a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  main #prenons-con form .pop-up-btn > button {
+    width: 225px;
+    height: 55px;
+    margin: 15px;
+    padding: 8px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(177, 19, 19, 0.4));
+    transition: background 0.3s ease;
+    border: none;
+  }
+  /* Animation css des boutons */
+  main #prenons-con form .pop-up-btn > button:hover {
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(177, 19, 19));
+  }
+  /* pop-up box */
+  main #prenons-con form .pop-up {
+    position: relative;
+    transform: translateY(-200%);
+    width: 500px;
+    height: 40vh;
+    background-color: rgb(140, 135, 135);
+    background-image: linear-gradient(140deg, rgb(140, 135, 135) 10%, rgb(25, 88, 125) 57%);
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  main #prenons-con form .pop-up .pop-up-text {
+    position: absolute;
+    background-color: rgb(140, 135, 135);
+    background-image: linear-gradient(140deg, rgb(140, 135, 135) 10%, rgb(25, 88, 125) 57%);
+    box-shadow: 0px 0px 10px 10px rgba(188, 187, 189, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 10px rgba(188, 187, 189, 0.75);
+    -moz-box-shadow: 0px 0px 10px 10px rgba(188, 187, 189, 0.75);
+    width: 60%;
+    height: 60%;
+    text-align: center;
+    border: 1px solid #00b7e8;
+    border-radius: 10px;
+    top: 18%;
+    left: 20%;
+  }
+  main #prenons-con form .pop-up .pop-up-text p.text {
+    text-align: center;
+    margin-top: 50px;
+  }
+  #pop-up {
+    display: none;
+  }
+  #pop-up:target {
+    display: block;
+  }
+  /* pied de page */
+  footer {
+    background-color: #000000;
+    margin: 0;
+    bottom: 0;
+  }
+  footer .container {
+    padding-top: 90px;
+    height: 130vh;
+  }
+  footer .container .footer-top {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  footer .container .footer-top img {
+    width: 100px;
+    height: 100px;
+  }
+  footer .container .footer-top img:nth-child(3) {
+    margin-top: 280px;
+  }
+  footer .container .footer-top .p-container {
+    padding-top: 140px;
+    padding-bottom: 120px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  footer .container .footer-top .p-container p:nth-child(1),
+  footer .container .footer-top .p-container p:nth-child(3) {
+    margin-bottom: 20px;
+  }
+  footer .container .footer-top .p-container p:nth-child(2),
+  footer .container .footer-top .p-container p:nth-child(3),
+  footer .container .footer-bottom p {
+    font-size: 12px;
+  }
+  /* structuration des input de type radio */
+  input[type=radio] {
+    position: relative;
+    margin: 2px;
+  }
+  input[type=radio]::before,
+  input[type=radio]::after {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+  }
+  input[type=radio]::before {
+    border: 1px solid #00b7e8;
+    background-color: #000000;
+  }
+  input[type=radio]:checked::after {
+    border: 1px solid #00b7e8;
+    background-color: #00b7e8;
+    transform: scale(0.9);
+  }
+  /* ------- */
+  footer .container .footer-bottom {
+    margin-top: 100px;
+    margin: auto;
+    text-align: center;
+  }
+  footer .container .footer-bottom p > img {
+    transform: translateY(30%);
+    margin-right: 15px;
+  }
+  footer .container .footer-bottom .logo-group {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .container .footer-bottom .logo-group img {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  /* Effets hover sur les boutons dans le pied de page */
+  footer .container .footer-bottom .logo-group img:hover {
+    filter: brightness(0) saturate(100%) invert(79%) sepia(98%) saturate(579%) hue-rotate(1deg) brightness(91%) contrast(87%);
+  }
+}
+/* Téléphone mobile */
+@media screen and (max-width: 640px) {
+  /* Configurations (mises en forme) générales */
+  /* ajout particulier */
+  .text {
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .sous-titre {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  a {
+    font-size: 13px;
+  }
+  button,
+  input[type=submit] {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  h1 {
+    font-size: 20px;
+    font-style: normal;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  /* mise en forme de l'entête */
+  header {
+    height: auto;
+  }
+  header .header-container {
+    height: auto;
+  }
+  /* Haut de l'entête */
+  header .header-container .top {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  /* Bas de l'entête */
+  header .header-container .bottom {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  /* structuration des paragraphes en intro */
+  header .header-container .bottom p:nth-child(1) {
+    width: 220px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  header .header-container .bottom p:nth-child(2) {
+    margin-top: 2px;
+    margin-bottom: 8px;
+  }
+  header .header-container .bottom .img-right {
+    right: 1%;
+    top: 20%;
+  }
+  header .header-container .bottom .img-right img {
+    margin-bottom: 8px;
+    width: 30px;
+    height: 28px;
+  }
+  /* Boutons en Intro */
+  header .header-container .bottom .btn {
+    flex-direction: column;
+    margin-top: 2px;
+  }
+  header .header-container .bottom .btn button {
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    padding: 8px;
+  }
+  header .header-container .bottom .btn button a {
+    width: 160px;
+  }
+  /* Structuration du contenu principal */
+  main .container .fleche-dwn {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  /* Section commune à cineme, némésis et alliés */
+  main .container section {
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
+  main .container section > p {
+    width: 280px;
+    margin-bottom: 40px;
+  }
+  /* Structuration du contenu principal -> structuration de chaque éléments images nom et année */
+  main .container section .personnages {
+    grid-template-columns: 1fr;
+  }
+  /* Affichage de l'image au dessus du titre némésis */
+  .bt-13 {
+    width: 80px;
+    transform: translate(60%, -50%);
+  }
+  /* Affichage de l'image au dessus du titre alliés */
+  .bt-12 {
+    transform: translateY(-65%);
+    height: 100px;
+    width: 110px;
+  }
+  /* structuration de la section multimédia */
+  main .container #multimedia .top div img.fleche-left,
+  main .container #multimedia .top div img.fleche-right {
+    margin-top: 0;
+  }
+  main .container #multimedia .top {
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+  main .container #multimedia .top .multi-info {
+    padding-top: 20px;
+    height: 350px;
+    width: 85%;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: column;
+  }
+  main .container #multimedia .top .multi-info .image {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .container #multimedia .top .multi-info .image img {
+    width: 90%;
+    height: 100%;
+  }
+  main .container #multimedia .top .multi-info .multi-info-text {
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    height: 70%;
+  }
+  main .container #multimedia .top .multi-info .multi-info-text p {
+    width: auto;
+    font-size: 10px;
+    text-align: justify;
+  }
+  /* Bas de page de la partie multimédia */
+  main .container #multimedia .bottom .img2 {
+    width: 38px;
+    left: 38.8%;
+    right: 55%;
+    top: 44.8%;
+  }
+  /* Structuration formulaire prenons contact */
+  main #prenons-con form {
+    width: 90%;
+    padding: 6px;
+  }
+  main #prenons-con form div.form-btn {
+    align-items: center;
+    justify-content: center;
+  }
+  main #prenons-con form .pop-up-btn > button {
+    height: 40px;
+    margin: 10px;
+    padding: 8px;
+  }
+  /* pop-up box */
+  main #prenons-con form .pop-up {
+    width: 80%;
+  }
+  main #prenons-con form .pop-up .pop-up-text p.text {
+    margin-top: 40px;
+  }
+  /* pied de page */
+  footer .container {
+    padding-top: 30px;
+    height: 90vh;
+  }
+  footer .container .footer-top {
+    margin-bottom: 30px;
+  }
+  footer .container .footer-top img {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  footer .container .footer-top img:nth-child(3) {
+    margin-top: 260px;
+  }
+  footer .container .footer-top .p-container {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  footer .container .footer-top .p-container p:nth-child(1),
+  footer .container .footer-top .p-container p:nth-child(3) {
+    margin-bottom: 10px;
+  }
+  footer .container .footer-top .p-container p:nth-child(2),
+  footer .container .footer-top .p-container p:nth-child(3),
+  footer .container .footer-bottom p {
+    text-align: center;
+  }
+  /* structuration des input de type radio */
+  input[type=radio] {
+    margin: 2px;
+    width: 10px;
+    height: 10px;
+  }
+  /* ------- */
+  footer .container .footer-bottom {
+    margin-top: 30px;
+  }
+  footer .container .footer-bottom .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 50px;
+  }
+  footer .container .footer-bottom .logo-group {
+    margin-top: 15px;
+  }
+  footer .container .footer-bottom img {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 30px;
+  }
+  /* Effets hover sur les boutons dans le pied de page */
+}
+
+/*# sourceMappingURL=index.css.map */
