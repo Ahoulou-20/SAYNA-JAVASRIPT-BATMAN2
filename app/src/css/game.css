@@ -207,6 +207,16 @@ main div._container div.quiz_container section.quiz div.quiz_content {
 }
 main div._container div.quiz_container section.quiz div.quiz_content div.quiz_left {
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main div._container div.quiz_container section.quiz div.quiz_content div.quiz_left img#img1 {
+  margin-bottom: 30%;
+}
+main div._container div.quiz_container section.quiz div.quiz_content div.quiz_left img#img2 {
+  margin-top: 25%;
 }
 main div._container div.quiz_container section.quiz div.quiz_content div.quiz_right {
   width: 60%;
@@ -233,6 +243,13 @@ main div._container div.quiz_container section.quiz div.quiz_content div.quiz_ri
   font-size: 18px;
   font-weight: 400;
   font-family: "Rajuani";
+}
+main div._container div.quiz_container section.quiz div.quiz_content div.quiz_right div.quiz_rep div.img_gp {
+  background: transparent;
+  height: 180px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: flex-end;
 }
 main div._container div.quiz_container section.quiz div.quiz_content div.quiz_right div.quiz_rep div.question_suivante {
   margin: 30px 0 0 0;
