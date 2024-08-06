@@ -148,30 +148,27 @@ header div._container div.h_bottom div.img_border img#fleche_down {
 /* style menu */
 main {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 main div._container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   /* Style des sections de quiz */
 }
 main div._container div.game_acc {
-  width: 100%;
-  margin: 40px 0;
+  padding-top: 10px;
+  border: 2px solid orange;
+  width: 1000px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 main div._container div.game_acc img#fleche_down {
   width: 100px;
 }
 main div._container div.game_acc h1 {
-  margin: 100px 0;
+  margin: 50px 0;
 }
 main div._container div.game_acc button {
   margin: 100px 0;
@@ -180,43 +177,44 @@ main div._container div.game_acc button {
   background: linear-gradient(to right, rgba(25, 88, 125, 0.4392156863) 1%, rgba(237, 222, 191, 0.4039215686) 20%);
 }
 main div._container div.quiz_container {
-  margin: 40px 0 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 10px 0 0 0;
+  overflow: hidden;
 }
-main div._container div.quiz_container section.quiz {
-  width: 95%;
-  text-align: left;
-}
-main div._container div.quiz_container section.quiz p {
+main div._container div.quiz_container p {
   display: inline-block;
   width: 100%;
   text-align: center;
   font-size: 40px;
   font-weight: bold;
 }
-main div._container div.quiz_container section.quiz div.quiz_content {
-  width: 100%;
+main div._container div.quiz_container section.quiz {
+  border: 2px solid blue;
+  width: 1000px;
+  margin: auto;
+  text-align: left;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 40px 0;
-  padding: 10px 0;
+  overflow: hidden;
+}
+main div._container div.quiz_container section.quiz div.quiz_content {
+  border: 2px solid red;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 main div._container div.quiz_container section.quiz div.quiz_content div.quiz_left {
-  width: 30%;
+  width: 35%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
 }
 main div._container div.quiz_container section.quiz div.quiz_content div.quiz_left img#img1 {
-  margin-bottom: 30%;
+  margin-bottom: 20%;
 }
 main div._container div.quiz_container section.quiz div.quiz_content div.quiz_left img#img2 {
-  margin-top: 25%;
+  margin-top: 15%;
 }
 main div._container div.quiz_container section.quiz div.quiz_content div.quiz_right {
   width: 60%;
