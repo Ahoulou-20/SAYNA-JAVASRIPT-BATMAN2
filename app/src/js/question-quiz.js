@@ -1,13 +1,10 @@
-const questions = [
+const RepQuestions = [
   {
     question: "Quel est l’autre nom de l’Homme-Mystère ?",
     option1: "Le Sphinx ",
     option2: "Saphir",
     option3: "Le Joker",
     reponse: "1",
-    img1: "../../assets/Illustrations-game/Batgame_3.png",
-    igm2: "",
-    img3: "",
   },
   {
     question: "Quelle est l’ancienne profession de Harley Quinn ?",
@@ -15,9 +12,6 @@ const questions = [
     option2: "Psychiatre",
     option3: "Dentiste",
     reponse: "2",
-    img1: "../../assets/Illustrations-game/Batgame_4.png",
-    igm2: "",
-    img3: "",
   },
   {
     question: "Quel est l’objet fétiche de Double Face ?",
@@ -25,9 +19,6 @@ const questions = [
     option2: "Un livre",
     option3: "Un couteau",
     reponse: "1",
-    img1: "../../assets/Illustrations-game/Batgame_5.png",
-    igm2: "",
-    img3: "",
   },
   {
     question: "Qui a produit Batman en 1964 ?",
@@ -35,9 +26,6 @@ const questions = [
     option2: "Andy Warhol",
     option3: "Leslie H. Martinson",
     reponse: "3",
-    img1: "../../assets/Illustrations-game/Batgame_6.png",
-    igm2: "",
-    img3: "",
   },
   {
     question: "Batman c’est aussi le nom d’une ville en...?",
@@ -45,9 +33,6 @@ const questions = [
     option2: "Islande",
     option3: "Allemagne",
     reponse: "1",
-    img1: "../../assets/Illustrations-game/Batgame_7.png",
-    igm2: "",
-    img3: "",
   },
   {
     question: "Quel vilain apparaît pour la première fois dans le Batman 232 ?",
@@ -55,9 +40,6 @@ const questions = [
     option2: "Ra’s al Ghul",
     option3: "Poison Ivy",
     reponse: "2",
-    img1: "../../assets/Illustrations-game/Batgame_8.png",
-    igm2: "../../assets/Illustrations-game/Batgame_9.png",
-    img3: "../../assets/Illustrations-game/Batgame_9-1.png",
   },
   {
     question: "Quelle ville Batman défend-il ?",
@@ -65,9 +47,6 @@ const questions = [
     option2: "Starling City",
     option3: "Hell’s Kitchen",
     reponse: "1",
-    img1: "../../assets/Illustrations-game/Batgame_10.png",
-    igm2: "",
-    img3: "",
   },
   {
     question: "Tim Burtin a réalisé deux Batman, qui jouait Batman ?",
@@ -75,9 +54,6 @@ const questions = [
     option2: "Val Kilmer",
     option3: "Mickael Keaton",
     reponse: "3",
-    img1: "../../assets/Illustrations-game/Batgame_11.png",
-    igm2: "",
-    img3: "",
   },
   {
     question: "Dans son premier Batman (1989) Jack Nicholson jouait :",
@@ -85,9 +61,6 @@ const questions = [
     option2: "L’Homme Mystère",
     option3: "Le Joker",
     reponse: "2",
-    img1: "../../assets/Illustrations-game/Batgame_12.png",
-    igm2: "../../assets/Illustrations-game/Batgame_13.png",
-    img3: "../../assets/Illustrations-game/Batgame_13-1.png",
   },
   {
     question: "Qui est Jonathan Crane ? ",

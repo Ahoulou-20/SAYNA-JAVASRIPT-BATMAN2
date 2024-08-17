@@ -60,32 +60,22 @@ input[type=submit] {
 }
 
 .container {
-  margin-left: 102px;
-  margin-right: 102px;
-  left: 0;
-  right: 0;
+  margin: auto;
+  width: 80%;
   overflow: hidden;
   border: 0.1px solid #bcbbbd;
   border-bottom: none;
   border-top: none;
 }
 
-h1 {
+h1,
+h2 {
   font-family: "Rajdhani", sans-serif;
   font-weight: 500;
   font-size: 36px;
   font-style: normal;
-  color: #ffffff;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-h2 {
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  font-style: normal;
-  color: #ffffff;
 }
 
 /* mise en forme de l'entête */
@@ -98,46 +88,41 @@ header {
   margin: 0;
   padding: 0;
 }
-
-header .header-container {
-  top: 0;
-  height: 130vh;
+header div.container {
+  /* Bas de l'en-tête*/
 }
-
-/* Haut de l'entête */
-header .header-container .top {
+header div.container div.h-top {
   display: flex;
   justify-content: space-between;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  padding-bottom: 102px;
-  padding-top: 50px;
+  width: 100%;
+  padding: 36px 50px;
   border-bottom: 1px solid #bcbbbd;
 }
-
-header .header-container .top a.logo-home {
-  color: none;
+header div.container div.h-top a img:hover {
+  filter: brightness(0) saturate(100%) invert(79%) sepia(98%) saturate(579%) hue-rotate(1deg) brightness(91%) contrast(87%);
 }
-
-header .header-container .top a {
+header div.container div.h-top nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+header div.container div.h-top nav ul li {
+  margin: 0 15px;
+}
+header div.container div.h-top nav ul li a#home {
+  text-decoration: underline;
+}
+header div.container div.h-top nav ul li a {
+  font-size: 24px;
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
-  text-decoration: underline;
 }
-
-header .header-container .top a.home:hover {
+header div.container div.h-top nav ul li a:hover {
   font-weight: bold;
   text-decoration: underline;
 }
-
-/* Surbrillance au survol des image de l'entête */
-header .header-container a img:hover {
-  filter: brightness(0) saturate(100%) invert(79%) sepia(98%) saturate(579%) hue-rotate(1deg) brightness(91%) contrast(87%);
-}
-
-/* Bas de l'entête */
-header .header-container .bottom {
+header div.container div.h-bottom {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,57 +131,50 @@ header .header-container .bottom {
   padding-right: 4rem;
   padding-top: 132px;
 }
-
-header .header-container .bottom .intro-h {
+header div.container div.h-bottom div.intro-h {
   text-align: center;
 }
-
-/* structuration des paragraphes en intro */
-header .header-container .bottom p:nth-child(1) {
+header div.container div.h-bottom div.intro-h p:nth-child(1) {
   text-align: center;
   width: 460px;
   margin-top: 15px;
 }
-
-header .header-container .bottom p:nth-child(2) {
+header div.container div.h-bottom div.intro-h p:nth-child(2) {
   font-weight: bold;
   margin-top: 30px;
 }
-
-header .header-container .bottom .img-right {
+header div.container div.h-bottom div.intro-h div.btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+header div.container div.h-bottom div.intro-h div.btn button {
+  width: 225px;
+  height: 55px;
+  margin: 15px;
+  padding: 8px;
+  transition: background 0.3s ease;
+  border: none;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(177, 19, 19, 0.4));
+}
+header div.container div.h-bottom div.intro-h div.btn button:hover {
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(177, 19, 19));
+}
+header div.container div.h-bottom div.img-right {
+  z-index: 1000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  right: 3.9%;
-  top: 40%;
+  right: 5.85%;
+  top: 35%;
 }
-
-header .header-container .bottom .img-right img {
+header div.container div.h-bottom div.img-right img {
   margin-bottom: 15px;
 }
-
-/* Boutons en Intro */
-header .header-container .bottom .btn {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 80px;
-}
-
-header .header-container .bottom .btn button {
-  width: 225px;
-  height: 55px;
-  margin: 15px;
-  padding: 8px;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(177, 19, 19, 0.4));
-  transition: background 0.3s ease;
-  border: none;
-}
-
-/* Animation css des boutons */
-header .header-container .bottom .btn button:hover {
-  background: linear-gradient(to right, rgb(255, 255, 255), rgb(177, 19, 19));
+header div.container div.h-bottom div.img-right img:hover {
+  filter: brightness(0) saturate(100%) invert(79%) sepia(98%) saturate(579%) hue-rotate(1deg) brightness(91%) contrast(87%);
 }
 
 /* Structuration du contenu principal */
